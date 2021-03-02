@@ -1,4 +1,16 @@
-
+<?php
+   $connect = pg_connect("host=ec2-54-209-43-223.compute-1.amazonaws.com
+   dbname=d6rr91cmsif2b3
+   port=5432
+   user=hlotdilcmsymox
+   password=51b98b5ecd79449ea1f7ed9dccb511adbc4ce2642d3862087cbbd7e3287b0151
+    sslmode=require");
+    if ($connect === false) {
+        die("ERROR: Something went wrong with conenction!");
+    }
+    $query ="select * from products";
+    $result = pg_query($connect,$query);
+    ?>
 <!DOCTYPE html>
 <html>
 
