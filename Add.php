@@ -1,16 +1,4 @@
-<?php
-   $connect = pg_connect("host=ec2-34-192-58-41.compute-1.amazonaws.com
-   dbname=d9vnrte4pa2u89
-   port=5432
-   user=hlmwaqxejaexwl
-   password=eaa2a48bf6e6bb49dabb555d97106a0fa816acde28d1acd4e7883faeedab0ed7
-    sslmode=require");
-    if ($connect === false) {
-        die("ERROR: Something went wrong with conenction!");
-    }
-    $query ="select * from products";
-    $result = pg_query($connect,$query);
-    ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -44,22 +32,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                        <?php
-                            if($result > 0){
-                                while ($row_data = pg_fetch_assoc($result)){
-                        ?>
-                        <tr>
-                            <td class="table-primary" ><?php echo $row_data["product_name"];?></td>
-                            <td class="table-primary"> <?php echo $row_data["product_type"];?></td>
-                            <td class="table-primary"><?php echo $row_data["price"];?></td>
-                        </tr>
-                        <?php
-                                }
-                            }
-                            else{
-                                echo "<script>alert('Fetch database fail !');</script>" . pg_errormessage($query);
-                            }
-                        ?>
+
                 </tbody>
             </table>
     </div>
