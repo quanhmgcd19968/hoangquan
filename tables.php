@@ -1,9 +1,9 @@
 <?php
-   $connect = pg_connect("host=ec2-34-192-58-41.compute-1.amazonaws.com
-   dbname=d9vnrte4pa2u89
+   $connect = pg_connect("host=ec2-54-209-43-223.compute-1.amazonaws.com
+   dbname=d6rr91cmsif2b3
    port=5432
-   user=hlmwaqxejaexwl
-   password=eaa2a48bf6e6bb49dabb555d97106a0fa816acde28d1acd4e7883faeedab0ed7
+   user=hlotdilcmsymox
+   password=51b98b5ecd79449ea1f7ed9dccb511adbc4ce2642d3862087cbbd7e3287b0151
     sslmode=require");
     if ($connect === false) {
         die("ERROR: Something went wrong with conenction!");
