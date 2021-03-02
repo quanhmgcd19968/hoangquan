@@ -32,7 +32,22 @@
                     </tr>
                 </thead>
                 <tbody>
-
+                        <?php
+                            if($result > 0){
+                                while ($row_data = pg_fetch_assoc($result)){
+                        ?>
+                        <tr>
+                            <td class="table-primary" ><?php echo $row_data["product_name"];?></td>
+                            <td class="table-primary"> <?php echo $row_data["product_type"];?></td>
+                            <td class="table-primary"><?php echo $row_data["price"];?></td>
+                        </tr>
+                        <?php
+                                }
+                            }
+                            else{
+                                echo "<script>alert('Fetch database fail !');</script>" . pg_errormessage($query);
+                            }
+                        ?>
                 </tbody>
             </table>
     </div>
