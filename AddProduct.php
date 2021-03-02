@@ -1,5 +1,5 @@
 <?php
-   $connect = pg_connect("ec2-54-209-43-223.compute-1.amazonaws.com
+   $connect = pg_connect("host=ec2-54-209-43-223.compute-1.amazonaws.com
   dbname=d6rr91cmsif2b3
   port=5432
   user=hlotdilcmsymox
@@ -7,9 +7,9 @@
    sslmode=require");
 
    if ($connect === false) {
-      die("ERROR: Something went wrong with conenction!");
+      die("ERROR: Something went wrong with connection!");
     } else {
-      $product_name = $_POST['Productname'];
+      $product_name = $_POST['Product_name'];
       $product_type = $_POST['Type'];
       $price = $_POST['Price'];
 
