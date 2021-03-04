@@ -6,7 +6,7 @@
    password=51b98b5ecd79449ea1f7ed9dccb511adbc4ce2642d3862087cbbd7e3287b0151
     sslmode=require");
     if ($connect === false) {
-        die("ERROR: Something went wrong with conenction!");
+        die("ERROR: Something went wrong with connection!");
     }
     $query ="select * from products";
     $result = pg_query($connect,$query);
@@ -29,8 +29,8 @@
         <div class="login-form">
             <form action="AddProduct.php" method="POST">
                 <h2>Products</h2>
-                <input type="text" name="Productname" placeholder="Product Name">
-                <input type="text" name="Type" placeholder="Product type">
+                <input type="text" name="Productname" placeholder="Toy">
+                <input type="text" name="Type" placeholder="Type">
                 <input type="text" name="Price" placeholder="Price">
                 <button type="Add">Add</button>
             </form>
