@@ -2,9 +2,9 @@
 session_start();
 $username = $_POST['Username'];
 $password = $_POST['Password'];
-    if ($username == 'admin' && $password == '123') {
+    if ($username == 'admin' && $password == 'atnshop') {
         header("location:Add.php");
-    } elseif ($username == 'boss' && $password == '123') {
+    } elseif ($username == 'boss' && $password == 'atnshop') {
         header("location:tables.php");
     } else
     {
