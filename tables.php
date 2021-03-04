@@ -33,9 +33,9 @@
             <table class="table table-striped table-primary">
                 <thead>
                     <tr class="table-primary">
-                    <th scope="col">PRODUCT Name</th>
-                    <th scope="col">PRODUCT Type</th>
-                    <th scope="col">PRODUCT PRICE</th>
+                    <th scope="col">Toy</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Amount</th>
                     </tr>
                 </thead>
                 <tbody>
