@@ -9,7 +9,7 @@
    if ($connect === false) {
       die("ERROR: Something went wrong with connection!");
     } else {
-      $product_name = $_POST['Product_name'];
+      $product_name = $_POST['Productname'];
       $product_type = $_POST['Type'];
       $price = $_POST['Price'];
 
