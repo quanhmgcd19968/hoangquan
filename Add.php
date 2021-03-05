@@ -8,7 +8,7 @@
     if ($connect === false) {
         die("ERROR: Something went wrong with connection!");
     }
-    $query ="select * from products";
+    $query ="select * from product";
     $result = pg_query($connect,$query);
     ?>
 <!DOCTYPE html>
