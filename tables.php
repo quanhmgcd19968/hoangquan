@@ -6,9 +6,9 @@
    password=51b98b5ecd79449ea1f7ed9dccb511adbc4ce2642d3862087cbbd7e3287b0151
     sslmode=require");
     if ($connect === false) {
-        die("ERROR: Something went wrong with conenction!");
+        die("ERROR: Something went wrong with connection!");
     }
-    $query ="select * from products";
+    $query ="select * from product";
     $result = pg_query($connect,$query);
     ?>
 <!doctype html>
